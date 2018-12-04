@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext");
 html,
 body,
 div,
@@ -131,10 +131,29 @@ a {
 * {
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'master_of_break';
-  src: url("../fonts/master-of-break-font/master_of_break.otf") format("opentype"); }
-
 .container {
   width: 1280px;
   margin: 0 auto; }
+
+.header-wrapper {
+  background: url("../img/header-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 400px; }
+  .header-wrapper .olender-header .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .header-wrapper .olender-header .top-content .menu {
+      margin: 40px 0 100px 0;
+      text-align: center; }
+      .header-wrapper .olender-header .top-content .menu a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        color: #5a5b5d;
+        margin: 0 35px; }
+
+.about {
+  background-color: #feab11; }

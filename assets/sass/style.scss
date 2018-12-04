@@ -6,3 +6,33 @@
     margin: 0 auto;
 }
 
+.header-wrapper{
+    background: url('../img/header-background.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 400px;
+    .olender-header{
+        .top-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .menu{
+                margin: 40px 0 100px 0;
+                text-align: center;
+                a{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 26px;
+                    font-weight: 500;
+                    color: #5a5b5d;
+                    margin: 0 35px;
+                }
+            }
+        }
+    }
+}
+
+.about{
+    background-color: #feab11;
+}
+
