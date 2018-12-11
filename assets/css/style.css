@@ -216,3 +216,12 @@ a {
     .portfolio .portfolio-items .portfolio-item .live-link {
       width: 50%;
       height: 100%; }
+
+.technology-items {
+  display: flex;
+  justify-content: space-between; }
+  .technology-items .technology-item {
+    width: 10%;
+    height: 300px; }
+    .technology-items .technology-item .technology-img {
+      width: 100%; }

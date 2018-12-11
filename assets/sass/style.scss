@@ -102,14 +102,30 @@
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;
-            .git-link{
+
+            .git-link {
                 height: 100%;
                 width: 50%;
             }
-            .live-link{
+
+            .live-link {
                 width: 50%;
                 height: 100%;
             }
+        }
+    }
+}
+
+.technology-items {
+    display: flex;
+    justify-content: space-between;
+
+    .technology-item {
+        width: 10%;
+        height: 300px;
+
+        .technology-img {
+            width: 100%;
         }
     }
 }
