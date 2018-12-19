@@ -139,15 +139,15 @@ a {
 .header-wrapper {
   background: url("../img/header-background.jpg");
   background-size: cover;
-  background-position: bottom;
-  padding-bottom: 400px; }
+  background-position-y: 70%; }
   .header-wrapper .olender-header .top-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 88vh;
+    justify-content: flex-start; }
     .header-wrapper .olender-header .top-content .menu {
-      margin: 40px 0 100px 0;
+      margin: 40px 0 40px 0;
       text-align: center; }
       .header-wrapper .olender-header .top-content .menu a {
         font-family: 'Roboto', sans-serif;
@@ -190,7 +190,7 @@ a {
       transform: translateX(-50%);
       width: 65px;
       height: 65px;
-      background-color: #f8fafa;
+      background-color: #E0DFDA;
       border-radius: 50%; }
   .about .about-text {
     max-width: 500px;
@@ -213,9 +213,46 @@ a {
     .portfolio .portfolio-items .portfolio-item .git-link {
       height: 100%;
       width: 50%; }
+      .portfolio .portfolio-items .portfolio-item .git-link:hover a {
+        opacity: 1; }
+      .portfolio .portfolio-items .portfolio-item .git-link a {
+        opacity: 0;
+        transition: all 0.4s;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(249, 166, 12, 0.7);
+        width: 100%;
+        height: 100%;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        color: #fff; }
+        .portfolio .portfolio-items .portfolio-item .git-link a span {
+          width: 100%;
+          font-size: 50px;
+          margin-bottom: 5px; }
     .portfolio .portfolio-items .portfolio-item .live-link {
       width: 50%;
       height: 100%; }
+      .portfolio .portfolio-items .portfolio-item .live-link:hover a {
+        opacity: 1; }
+      .portfolio .portfolio-items .portfolio-item .live-link a {
+        opacity: 0;
+        transition: all 0.4s;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        height: 100%;
+        font-weight: 700;
+        font-size: 68px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000; }
 
 .technology-items {
   display: flex;
