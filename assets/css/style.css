@@ -254,11 +254,58 @@ a {
         text-align: center;
         color: #000; }
 
-.technology-items {
-  display: flex;
-  justify-content: space-between; }
-  .technology-items .technology-item {
-    width: 10%;
-    height: 300px; }
-    .technology-items .technology-item .technology-img {
-      width: 100%; }
+.technology {
+  background: url("../img/skills.jpg"); }
+  .technology .technology-heading {
+    padding: 20px 0 40px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700; }
+  .technology .technology-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    width: calc(100% + 20px); }
+    .technology .technology-items .technology-item {
+      width: calc(25% - 20px);
+      text-align: center;
+      margin: 0 10px 50px 10px; }
+      .technology .technology-items .technology-item .technology-img {
+        width: 200px;
+        transition: all 0.2s; }
+        .technology .technology-items .technology-item .technology-img:hover {
+          transform: scale(1.2); }
+      .technology .technology-items .technology-item .technology-name {
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 700;
+        text-transform: uppercase; }
+
+.footer {
+  background-color: #fea809;
+  padding: 25px 0; }
+  .footer .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer .footer-wrapper .left-footer {
+      width: 50%; }
+    .footer .footer-wrapper .contact-data {
+      width: 50%; }
+      .footer .footer-wrapper .contact-data .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px; }
+        .footer .footer-wrapper .contact-data .contact-item .icon {
+          color: #fff;
+          margin-right: 10px; }
+        .footer .footer-wrapper .contact-data .contact-item .map {
+          font-size: 30px;
+          margin-right: 12px; }
+        .footer .footer-wrapper .contact-data .contact-item .mobile {
+          font-size: 35px; }
+        .footer .footer-wrapper .contact-data .contact-item .envelope {
+          font-size: 20px; }
+        .footer .footer-wrapper .contact-data .contact-item .contact-text {
+          color: #fff;
+          font-size: 25px; }

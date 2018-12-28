@@ -18,6 +18,7 @@
             align-items: center;
             height: 88vh;
             justify-content: flex-start;
+
             .menu {
                 margin: 40px 0 40px 0;
                 text-align: center;
@@ -105,7 +106,8 @@
             .git-link {
                 height: 100%;
                 width: 50%;
-                &:hover a{
+
+                &:hover a {
                     opacity: 1;
                 }
 
@@ -123,11 +125,12 @@
                     font-size: 40px;
                     text-align: center;
                     color: #fff;
-                        span {
-                            width: 100%;
-                            font-size: 50px;
-                            margin-bottom: 5px;
-                        }
+
+                    span {
+                        width: 100%;
+                        font-size: 50px;
+                        margin-bottom: 5px;
+                    }
                 }
 
             }
@@ -135,9 +138,11 @@
             .live-link {
                 width: 50%;
                 height: 100%;
-                &:hover a{
+
+                &:hover a {
                     opacity: 1;
                 }
+
                 a {
                     opacity: 0;
                     transition: all 0.4s;
@@ -159,16 +164,79 @@
     }
 }
 
-.technology-items {
-    display: flex;
-    justify-content: space-between;
+.technology {
+    background: url('../img/skills.jpg');
+    .technology-heading{
+        padding: 20px 0 40px 0;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
 
-    .technology-item {
-        width: 10%;
-        height: 300px;
+    }
+    .technology-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        width: calc(100% + 20px);
 
-        .technology-img {
-            width: 100%;
+        .technology-item {
+            width: calc(25% - 20px);
+            text-align: center;
+            margin: 0 10px 50px 10px;
+
+            .technology-img {
+                width: 200px;
+                transition: all 0.2s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            .technology-name{
+                text-align: center;
+                margin-top: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #fea809;
+    padding: 25px 0;
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .left-footer{
+            width: 50%;
+        }
+        .contact-data{
+            width: 50%;
+            .contact-item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .icon{
+                    color: #fff;
+                    margin-right: 10px;
+                }
+                .map{
+                    font-size: 30px;
+                    margin-right: 12px;
+                }
+                .mobile{
+                    font-size: 35px;
+                }
+                .envelope{
+                    font-size: 20px;
+                }
+                .contact-text{
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
         }
     }
 }
